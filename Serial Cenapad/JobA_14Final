@@ -1,0 +1,15 @@
+#PBS -q grande
+#PBS -N JobA_14Final
+#PBS -V
+#!/bin/sh
+cd $PBS_O_WORKDIR
+
+echo "------------------------------------"
+echo "JobA_14Final: " `date`
+echo "Hostname: " `hostname`
+
+./u24h_serial
+
+echo "JobA_14Final: " `date`
+echo "------------------------------------"
+
